@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>CIS Guest House </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('Downloads/background.jpg'); 
+            background-size:cover ;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        form {
+            width: 400px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CIS Guest House </h1>
+    <form action="#" method="post">
+        <label for="name">Name*</label>
+        <input id="name" type="text" maxlength="50" name="name" placeholder="Enter Name" required>
+
+        <label for="phoneNumber">Phone Number*</label>
+        <input type="tel" name="phoneNumber" placeholder="000 000 0000" pattern="[0-9]{10}" maxlength="10" required>
+
+        <label for="address">Address*</label>
+        <input id="address" type="text" maxlength="200" name="address" placeholder="Enter Address" required>
+
+        <label for="gender">Gender*</label>
+        <select id="gender" name="gender" required>
+            <option value="F">Female</option>
+            <option value="M">Male</option>
+            <option value="OT">Other</option>
+        </select>
+
+        <label for="studentCapacity">Student Capacity*</label>
+        <input id="studentCapacity" type="text" maxlength="2" name="studentCapacity" placeholder="Your Answer" required>
+
+        <label for="ghLead">GH Lead/GH Owner*</label>
+        <input id="ghLead" type="text" maxlength="25" name="ghLead" placeholder="Your Answer" required>
+
+        <label for="leaseStartDate">Lease Start Date*</label>
+        <input type="date" id="leaseStartDate" name="leaseStartDate">
+
+        <label for="leaseEndDate">Lease End Date*</label>
+        <input type="date" id="leaseEndDate" name="leaseEndDate">
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
